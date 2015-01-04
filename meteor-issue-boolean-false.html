@@ -1,0 +1,24 @@
+<head>
+  <title>meteor-issue-boolean-false</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Flag</th>
+    </tr>
+    {{#each data}}
+      {{> datum}}
+    {{/each}}
+  </table>
+</body>
+
+<template name="datum">
+  <tr>
+    <td>{{name}}</td>
+    <td>{{flag}}</td>
+  </tr>
+</template>
